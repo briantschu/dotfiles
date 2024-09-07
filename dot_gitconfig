@@ -1,0 +1,14 @@
+[user]
+	name = Brian Tofte-Schumacher
+	email = 201665+briantschu@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[alias]
+	up = pull
